@@ -51,7 +51,7 @@ class Minesweeper(ctk.CTk):
         try:
             self.iconbitmap("bomb.ico")
         except Exception as e:
-            print("⚠️ Не удалось установить иконку окна:", e)
+            print("Не удалось установить иконку окна:", e)
 
         bomb_pil = Image.open("bomb.png")
         self.bomb_image = ctk.CTkImage(light_image=bomb_pil, size=(32, 32))
@@ -97,4 +97,5 @@ class Minesweeper(ctk.CTk):
 if __name__ == "__main__":
     app = Minesweeper()
     app.mainloop()
+
 
